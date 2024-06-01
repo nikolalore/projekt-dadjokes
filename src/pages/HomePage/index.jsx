@@ -7,11 +7,6 @@ export const HomePage = () => {
 
 
   return (
-    <div className="container">
-      <header>
-        <div className="logo" />
-        <h1>React webová aplikace</h1>
-      </header>
       <div className="container">
         <div className="joke">
           <div className="joke__body">
@@ -41,6 +36,5 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
