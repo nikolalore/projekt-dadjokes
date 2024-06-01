@@ -8,10 +8,10 @@ export const HomePage = () => {
   useEffect(() => {
     const fetchJokes = async () => {
       const response = await fetch(
-        'https://raw.githubusercontent.com/Czechitas-podklady-WEB/daweb-test/deploy/jokes.json',
+        'http://localhost:4000/api/jokes',
       );
       const data = await response.json();
-      setJokes(data);
+      setJokes(data.data);
     };
     fetchJokes();
   }, []);
